@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './assets/scss/styles.scss';
+import { Gallery } from './components/Gallery';
 import { Footer } from './components/Footer';
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Gallery />
       <Footer />
     </div>
   );
