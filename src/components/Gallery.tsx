@@ -28,7 +28,7 @@ export class Gallery extends React.Component {
                 <section className="grid-layout">
                     {
                         items.map((item: CardResponse) => (
-                            <Card key={item.id} item={item} />
+                            <Card key={item.id} item={item} enabledFooter />
                         ))
                     }
                 </section>
