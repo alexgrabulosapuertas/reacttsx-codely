@@ -6,6 +6,13 @@ body {
     background-color: #676767;
 }
 
+button, input {
+    background: #212121;
+    margin: .5rem;
+    padding: .5rem;
+    border: none;
+}
+
 .container {
     width: 80vw;
     margin: 2rem auto;
