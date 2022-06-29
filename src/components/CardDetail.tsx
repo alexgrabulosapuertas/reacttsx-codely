@@ -4,7 +4,7 @@ import { getGalleryItemById } from '../api/gallery';
 import { CardResponse } from '../interfaces/card';
 
 export class CardDetail extends React.Component {
-    constructor(props: any) {
+    constructor(props: {}) {
         super(props);
         this.state = {
             item: {},
