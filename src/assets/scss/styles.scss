@@ -23,11 +23,3 @@ button, input {
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 }
-
-.card {
-    border: 1px solid #212121;
-    padding: 1rem 0;
-    &__img {
-        width: 90%;
-    }
-}
