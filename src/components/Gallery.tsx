@@ -39,18 +39,17 @@ export class Gallery extends React.Component {
                 {
                     openModal &&
                     <Modal 
-                        title="New Item" 
-                        body={
-                            <form onSubmit={this.addItem} style={{display: 'flex', flexDirection: 'column'}}>
-                                <label htmlFor="name">Name</label>
-                                <input type="text" name="name" id="name" placeholder="Name" />
-                                <label htmlFor="url">Url</label>
-                                <input type="text" name="url" id="url" placeholder="Image URL" />
-                                <button>Add</button>
-                            </form>
-                        }
+                        title="New Item"
                         close={this.closeModalForm}
-                    />
+                    >
+                        <form onSubmit={this.addItem} style={{display: 'flex', flexDirection: 'column'}}>
+                            <label htmlFor="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name" />
+                            <label htmlFor="url">Url</label>
+                            <input type="text" name="url" id="url" placeholder="Image URL" />
+                            <button>Add</button>
+                        </form>
+                    </Modal>
                 }
             </section>
         );

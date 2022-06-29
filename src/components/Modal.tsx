@@ -1,13 +1,13 @@
 import { ReactElement } from "react";
 
-export function Modal(props: { title: string, body: ReactElement, close: () => void }) {
+export function Modal(props: { title: string, close: () => void, children: ReactElement }) {
 
     return (
         <article style={{...styles.modal,  position: 'fixed' }}>
             <div style={{margin: '2rem'}}>
                 <h3>{ props.title }</h3>
                 <button style={{ position: 'absolute', top: 0, right: 0}} onClick={props.close}>Close</button>
-                {props.body}
+                {props.children}
             </div>
         </article>
     );
