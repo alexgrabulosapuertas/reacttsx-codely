@@ -18,7 +18,7 @@ export class CardDetail extends React.Component {
                 item: {
                     id: data.id,
                     name: data.name,
-                    url: data.url,
+                    image: data.image,
                 },
             });
         });

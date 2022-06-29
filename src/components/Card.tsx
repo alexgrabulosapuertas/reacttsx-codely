@@ -4,7 +4,7 @@ export function Card({ item, enabledFooter }: { item: CardResponse, enabledFoote
     return (
         <article style={styles.card}>
             <h3>{item.name}</h3>
-            <img style={styles.cardImage} src={item.url} alt={item.name} />
+            <img style={styles.cardImage} src={item.image} alt={item.name} />
             {
                  enabledFooter && CardFooter(item.id)
             }

@@ -79,7 +79,7 @@ export class Gallery extends React.Component {
         const newCard: CardResponse = {
             id: key,
             name: name.value,
-            url: url.value,
+            image: url.value,
         };
         this.setState({
             items: [...items, newCard]
