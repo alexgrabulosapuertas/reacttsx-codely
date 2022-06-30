@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import { CSSProperties, ReactElement } from "react";
 
 export function Modal(props: { title: string, close: () => void, children: ReactElement }) {
 
@@ -21,10 +21,10 @@ const styles = {
         width: '80vw',
         top: '50vh',
         left: '50vw',
-        position: 'fixed' as 'fixed',
+        position: 'fixed',
         transform: 'translate(-50%, -50%)',
         boxShadow: '0px 0px 5px 2px',
-    },
+    } as CSSProperties,
     closeButton: {
         position: 'absolute' as 'absolute',
         top: 0,

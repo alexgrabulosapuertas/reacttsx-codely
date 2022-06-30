@@ -1,3 +1,5 @@
+import { CSSProperties } from "react";
+
 export function Navbar() {
     return(
         <nav style={styles.navbar}>
@@ -15,9 +17,9 @@ const styles = {
         padding: '1rem',
         top: '0',
         zIndex: 1,
-        position: 'sticky' as 'sticky',
-        textAlign: 'center' as 'center',
-    },
+        position: 'sticky',
+        textAlign: 'center',
+    } as CSSProperties,
     menu: {
         width: '50vw',
         display: 'inline-flex',
